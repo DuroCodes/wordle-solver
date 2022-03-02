@@ -21,11 +21,11 @@ inquirer.prompt({
         "Show tomorrow's wordle"
     ]
 }).then(answers => {
-    console.log(chalk.green.bold(`┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`));
     if (answers.choice.length < 1) {
         console.log(`${chalk.red.bold(`Error:`)} Please choose at least one of the options.`);
         process.exit(1);
     }
+    console.log(chalk.green.bold(`┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`));
     if (answers.choice.includes("Show yesterday's wordle")) {
         console.log(`${chalk.green.bold(`┃`)} Yesterday's Wordle: ${chalk.green.bold(`┃`)} ${words[index - 1]} ${chalk.green.bold(`┃`)}`);
     }
