@@ -1,0 +1,17 @@
+{
+  "name": "wordle-solved.ts",
+  "version": "1.0.0",
+  "description": "solves wordle by showing the wordle of today, yesterdays, and tomorrows",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.0",
+    "moment": "^2.29.1",
+    "typescript": "^4.6.2"
+  }
+}
