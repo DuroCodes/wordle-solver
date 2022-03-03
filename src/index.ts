@@ -25,7 +25,7 @@ inquirer.prompt({
         console.log(`${chalk.red.bold(`Error:`)} Please choose at least one of the options.`);
         process.exit(1);
     }
-    console.log(chalk.green.bold(`┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓`));
+    console.log(chalk.green.bold(`┏━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┓`));
     if (answers.choice.includes("Show yesterday's wordle")) {
         console.log(`${chalk.green.bold(`┃`)} Yesterday's Wordle: ${chalk.green.bold(`┃`)} ${words[index - 1]} ${chalk.green.bold(`┃`)}`);
     }
@@ -35,5 +35,5 @@ inquirer.prompt({
     if (answers.choice.includes("Show tomorrow's wordle")) {
         console.log(`${chalk.green.bold(`┃`)} Tomorrow's Wordle:  ${chalk.green.bold(`┃`)} ${words[index + 1]} ${chalk.green.bold(`┃`)}`);
     }
-    console.log(chalk.green.bold(`┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛`));
+    console.log(chalk.green.bold(`┗━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━┛`));
 });
