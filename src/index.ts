@@ -1,8 +1,6 @@
-#!usr/bin/env node
 import { red, green } from "chalk";
 import { prompt } from "inquirer";
 import * as moment from "moment";
-
 interface QuestionAnswer {
   choice: string;
 }
