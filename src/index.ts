@@ -13,7 +13,6 @@ const parseDate: Function = (str: any) => new Date(str.split('/')[2], str.split(
 const dateDiff: Function = (first: any, second: any) => Math.round((second - first) / (1000 * 60 * 60 * 24));
 const index: number = dateDiff(parseDate("6/19/2021"), parseDate(moment().format("MM/DD/YYYY")));
 
-
 console.clear();
 
 prompt({
