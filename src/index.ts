@@ -2337,7 +2337,7 @@ const index: number = dateDiff(
   parseDate(moment().format('MM/DD/YYYY')),
 );
 
-const offset: number = -16;
+const offset: number = -1;
 
 process.stdout.write('\u033c');
 
@@ -2379,6 +2379,6 @@ prompt({
       } ${green.bold('┃')}\n`,
     );
   }
-  process.stdout.write(green.bold('┗━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━┛'));
+  process.stdout.write(green.bold('┗━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━┛\n'));
   process.exit(0);
 });
